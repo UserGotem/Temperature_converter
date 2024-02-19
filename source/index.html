@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lämpötilamuunnin</title>
+</head>
+<body>
+    <h1>Lämpötilamuunnin</h1>
 
+    <select id="tyyppi">
+        <option id="c-f" value="c-f">°C - °F</option>
+        <option id="f-c" value="f-c">°F - °C</option>
+    </select>
+
+    <p>Syötä lämpötila:</p>
+    <form>
+        <input id="lukema" type="text">
+        <input id="painike" type="submit" value="Muunna">
+    </form>
+
+    <p id="muunnos"></p>
+    <p id="nollapiste"></p>
+
+    <form>
+        <p>Mikä on lämpötilan desimaali?</p>
+        <input type="radio" id="1dm" name="desimaalit" checked="checked">
+        <label for="1dm">1 desimaali</label><br>
+        <input type="radio" id="2dm" name="desimaalit">
+        <label for="2dm">2 desimaalia</label><br>
+        <input type="radio" id="3dm" name="desimaalit">
+        <label for="3dm">3 desimaalia</label>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
